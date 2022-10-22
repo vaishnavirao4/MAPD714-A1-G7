@@ -1030,6 +1030,9 @@
                                                 <include reference="mFd-0D-XVr"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="SinBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MVf-hh-NKV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO5-vX-t5q">
                                         <rect key="frame" x="96" y="0.0" width="71" height="64"/>
@@ -1057,6 +1060,9 @@
                                                 <include reference="CxR-FV-jzO"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="CosBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2V-5C-tXj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsT-f5-txZ">
                                         <rect key="frame" x="183" y="0.0" width="71" height="64"/>
@@ -1084,6 +1090,9 @@
                                                 <include reference="lmL-eN-r9S"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="TanBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agl-yr-FyN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srg-AA-5Qq">
                                         <rect key="frame" x="685" y="0.0" width="71" height="64"/>
@@ -1214,6 +1223,9 @@
                                                 <include reference="504-zR-LFE"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="SqrBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSq-ts-4lu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8W-sg-hbD" userLabel="π">
                                         <rect key="frame" x="183" y="0.0" width="71" height="64"/>
@@ -1241,6 +1253,9 @@
                                                 <include reference="xt3-kX-b3g"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="PiBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfD-bb-6xx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y51-hE-RCf">
                                         <rect key="frame" x="271" y="1" width="71" height="64"/>
@@ -1448,6 +1463,9 @@
                                                 <include reference="zoI-8D-48H"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="SqrootBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yR4-vR-epb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="R8A-oe-z8R"/>
@@ -1668,6 +1686,9 @@
                                                 <include reference="NEg-49-3m8"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="RandomBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QgH-Q9-Bwf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Al-zZ-hwT">
                                         <rect key="frame" x="8" y="0.0" width="71" height="64"/>

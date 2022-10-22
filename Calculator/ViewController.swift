@@ -127,6 +127,28 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func RandomBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func SqrBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func SqrootBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func PiBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func SinBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func CosBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func TanBtnPressed(_ sender: UIButton) {
+    }
+    
+    
     // This is the function when we make a selection of arithmetic operators
     func operation(operation: Operation) {
         if currentOperation != .NULL
