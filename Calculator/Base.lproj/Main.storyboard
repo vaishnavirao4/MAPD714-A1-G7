@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="q4i-iU-YP1" userLabel="fifth row">
+                                <rect key="frame" x="16" y="378" width="358" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f0-dx-8pH">
+                                        <rect key="frame" x="287" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="R1g-ea-eYQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="/" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.71372549019607845" blue="0.90196078431372551" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="R1g-ea-eYQ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="R1g-ea-eYQ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="DivideBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDp-rs-GYx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0v-tZ-9Ee">
+                                        <rect key="frame" x="96" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="WUf-hG-2ip"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="⌫" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="22">
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.062745098039215685" blue="0.45098039215686275" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="WUf-hG-2ip"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="WUf-hG-2ip"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="BackSpaceBtnPessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IW6-gh-rjA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF9-Zt-Neu">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="yP5-gF-749"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="C" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="22">
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.062745098039215685" blue="0.45098039215686275" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="yP5-gF-749"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="yP5-gF-749"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="ClearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNa-lO-MNZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shW-WD-mNy">
+                                        <rect key="frame" x="191" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="SIp-EY-FRK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="%" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.71372549019607845" blue="0.90196078431372551" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="SIp-EY-FRK"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="SIp-EY-FRK"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="PercentageBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNq-9A-BT4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="RCE-zq-2yX"/>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.023529411764705882" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="shW-WD-mNy" firstAttribute="firstBaseline" secondItem="1f0-dx-8pH" secondAttribute="firstBaseline" id="AHZ-3i-BiC"/>
+                                    <constraint firstItem="1f0-dx-8pH" firstAttribute="trailing" secondItem="RCE-zq-2yX" secondAttribute="trailing" id="BBQ-nT-xV6"/>
+                                    <constraint firstItem="shW-WD-mNy" firstAttribute="leading" secondItem="c0v-tZ-9Ee" secondAttribute="trailing" constant="24" id="GgN-Vb-uqh"/>
+                                    <constraint firstItem="1f0-dx-8pH" firstAttribute="leading" secondItem="shW-WD-mNy" secondAttribute="trailing" constant="25" id="H3P-zu-imP"/>
+                                    <constraint firstItem="fF9-Zt-Neu" firstAttribute="top" secondItem="RCE-zq-2yX" secondAttribute="top" id="KLf-h5-Eoi"/>
+                                    <constraint firstItem="fF9-Zt-Neu" firstAttribute="leading" secondItem="RCE-zq-2yX" secondAttribute="leading" id="KjI-c8-yKi"/>
+                                    <constraint firstItem="c0v-tZ-9Ee" firstAttribute="leading" secondItem="fF9-Zt-Neu" secondAttribute="trailing" constant="25" id="VZd-gc-lvA"/>
+                                    <constraint firstItem="shW-WD-mNy" firstAttribute="baseline" secondItem="1f0-dx-8pH" secondAttribute="baseline" id="bzE-ji-V3v"/>
+                                    <constraint firstItem="c0v-tZ-9Ee" firstAttribute="firstBaseline" secondItem="shW-WD-mNy" secondAttribute="firstBaseline" id="pmz-QL-6PI"/>
+                                    <constraint firstItem="fF9-Zt-Neu" firstAttribute="bottom" secondItem="RCE-zq-2yX" secondAttribute="bottom" id="sFa-CG-9kh"/>
+                                    <constraint firstItem="c0v-tZ-9Ee" firstAttribute="baseline" secondItem="shW-WD-mNy" secondAttribute="baseline" id="sg6-WC-ym9"/>
+                                    <constraint firstItem="fF9-Zt-Neu" firstAttribute="firstBaseline" secondItem="c0v-tZ-9Ee" secondAttribute="firstBaseline" id="szt-pS-gPR"/>
+                                    <constraint firstItem="fF9-Zt-Neu" firstAttribute="baseline" secondItem="c0v-tZ-9Ee" secondAttribute="baseline" id="zrV-ce-zBB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KLf-h5-Eoi"/>
+                                        <exclude reference="KjI-c8-yKi"/>
+                                        <exclude reference="sFa-CG-9kh"/>
+                                        <exclude reference="szt-pS-gPR"/>
+                                        <exclude reference="zrV-ce-zBB"/>
+                                        <exclude reference="VZd-gc-lvA"/>
+                                        <exclude reference="pmz-QL-6PI"/>
+                                        <exclude reference="sg6-WC-ym9"/>
+                                        <exclude reference="AHZ-3i-BiC"/>
+                                        <exclude reference="GgN-Vb-uqh"/>
+                                        <exclude reference="bzE-ji-V3v"/>
+                                        <exclude reference="BBQ-nT-xV6"/>
+                                        <exclude reference="H3P-zu-imP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KLf-h5-Eoi"/>
+                                        <include reference="KjI-c8-yKi"/>
+                                        <include reference="sFa-CG-9kh"/>
+                                        <include reference="szt-pS-gPR"/>
+                                        <include reference="zrV-ce-zBB"/>
+                                        <include reference="VZd-gc-lvA"/>
+                                        <include reference="pmz-QL-6PI"/>
+                                        <include reference="sg6-WC-ym9"/>
+                                        <include reference="AHZ-3i-BiC"/>
+                                        <include reference="GgN-Vb-uqh"/>
+                                        <include reference="bzE-ji-V3v"/>
+                                        <include reference="BBQ-nT-xV6"/>
+                                        <include reference="H3P-zu-imP"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="9EG-Fc-m1X" userLabel="fourth row">
+                                <rect key="frame" x="16" y="468" width="358" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ii-o4-lHt">
+                                        <rect key="frame" x="287" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="sMZ-Q0-VRr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="*" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.71372549019607845" blue="0.90196078431372551" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="sMZ-Q0-VRr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="sMZ-Q0-VRr"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="MultiplyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zA-lM-YHv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7h-no-hj8">
+                                        <rect key="frame" x="96" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="6uJ-bt-Ind"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="8" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6uJ-bt-Ind"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="6uJ-bt-Ind"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdA-VM-tQk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG2-w9-dly">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="nTP-pZ-SBW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="7" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nTP-pZ-SBW"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="nTP-pZ-SBW"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8K-Zv-M35"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiN-wY-KYc">
+                                        <rect key="frame" x="191" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="D8a-LC-GkL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="9" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="D8a-LC-GkL"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="D8a-LC-GkL"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43t-k1-wZC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="hJB-j9-xjA"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="w7h-no-hj8" firstAttribute="baseline" secondItem="wiN-wY-KYc" secondAttribute="baseline" id="6CC-AZ-EGa"/>
+                                    <constraint firstItem="YG2-w9-dly" firstAttribute="top" secondItem="hJB-j9-xjA" secondAttribute="top" id="9WP-zn-1Tg"/>
+                                    <constraint firstItem="YG2-w9-dly" firstAttribute="firstBaseline" secondItem="w7h-no-hj8" secondAttribute="firstBaseline" id="ABP-bm-Tfu"/>
+                                    <constraint firstItem="YG2-w9-dly" firstAttribute="leading" secondItem="hJB-j9-xjA" secondAttribute="leading" id="IC6-qE-a5j"/>
+                                    <constraint firstItem="wiN-wY-KYc" firstAttribute="leading" secondItem="w7h-no-hj8" secondAttribute="trailing" constant="24" id="LG0-YY-G4A"/>
+                                    <constraint firstItem="YG2-w9-dly" firstAttribute="bottom" secondItem="hJB-j9-xjA" secondAttribute="bottom" id="MTo-Dr-oE2"/>
+                                    <constraint firstItem="YG2-w9-dly" firstAttribute="baseline" secondItem="w7h-no-hj8" secondAttribute="baseline" id="OBf-Et-q6g"/>
+                                    <constraint firstItem="wiN-wY-KYc" firstAttribute="firstBaseline" secondItem="7ii-o4-lHt" secondAttribute="firstBaseline" id="VOh-1n-RCj"/>
+                                    <constraint firstItem="7ii-o4-lHt" firstAttribute="trailing" secondItem="hJB-j9-xjA" secondAttribute="trailing" id="ab2-tm-hMs"/>
+                                    <constraint firstItem="7ii-o4-lHt" firstAttribute="leading" secondItem="wiN-wY-KYc" secondAttribute="trailing" constant="25" id="ddP-BD-dkp"/>
+                                    <constraint firstItem="wiN-wY-KYc" firstAttribute="baseline" secondItem="7ii-o4-lHt" secondAttribute="baseline" id="eVO-Og-DaK"/>
+                                    <constraint firstItem="w7h-no-hj8" firstAttribute="leading" secondItem="YG2-w9-dly" secondAttribute="trailing" constant="25" id="rtz-z0-Rzb"/>
+                                    <constraint firstItem="w7h-no-hj8" firstAttribute="firstBaseline" secondItem="wiN-wY-KYc" secondAttribute="firstBaseline" id="ulA-pY-QoT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9WP-zn-1Tg"/>
+                                        <exclude reference="ABP-bm-Tfu"/>
+                                        <exclude reference="IC6-qE-a5j"/>
+                                        <exclude reference="MTo-Dr-oE2"/>
+                                        <exclude reference="OBf-Et-q6g"/>
+                                        <exclude reference="6CC-AZ-EGa"/>
+                                        <exclude reference="rtz-z0-Rzb"/>
+                                        <exclude reference="ulA-pY-QoT"/>
+                                        <exclude reference="LG0-YY-G4A"/>
+                                        <exclude reference="VOh-1n-RCj"/>
+                                        <exclude reference="eVO-Og-DaK"/>
+                                        <exclude reference="ab2-tm-hMs"/>
+                                        <exclude reference="ddP-BD-dkp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9WP-zn-1Tg"/>
+                                        <include reference="ABP-bm-Tfu"/>
+                                        <include reference="IC6-qE-a5j"/>
+                                        <include reference="MTo-Dr-oE2"/>
+                                        <include reference="OBf-Et-q6g"/>
+                                        <include reference="6CC-AZ-EGa"/>
+                                        <include reference="rtz-z0-Rzb"/>
+                                        <include reference="ulA-pY-QoT"/>
+                                        <include reference="LG0-YY-G4A"/>
+                                        <include reference="VOh-1n-RCj"/>
+                                        <include reference="eVO-Og-DaK"/>
+                                        <include reference="ab2-tm-hMs"/>
+                                        <include reference="ddP-BD-dkp"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="QiU-v2-yoN" userLabel="third row">
+                                <rect key="frame" x="16" y="557" width="358" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnf-xC-ac8">
+                                        <rect key="frame" x="287" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="Q1X-LB-eO2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.71372549019607845" blue="0.90196078431372551" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Q1X-LB-eO2"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Q1X-LB-eO2"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="SubtractBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqi-Ky-SzS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftb-Ww-ngb">
+                                        <rect key="frame" x="96" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="REp-Qq-dOY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="5" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="REp-Qq-dOY"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="REp-Qq-dOY"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQU-UV-tNJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvm-Rg-gAj">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="rls-aM-vnG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="4" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="rls-aM-vnG"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="rls-aM-vnG"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7d-Mm-P0C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQW-WO-JoQ">
+                                        <rect key="frame" x="191" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="qtf-yP-TFr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="6" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="qtf-yP-TFr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="qtf-yP-TFr"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLo-zr-vRw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="kRY-ve-3aQ"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rnf-xC-ac8" firstAttribute="leading" secondItem="DQW-WO-JoQ" secondAttribute="trailing" constant="25" id="2TP-9R-6JG"/>
+                                    <constraint firstItem="cvm-Rg-gAj" firstAttribute="top" secondItem="kRY-ve-3aQ" secondAttribute="top" id="EXT-Gf-Zl4"/>
+                                    <constraint firstItem="DQW-WO-JoQ" firstAttribute="firstBaseline" secondItem="rnf-xC-ac8" secondAttribute="firstBaseline" id="Ios-RY-Kbn"/>
+                                    <constraint firstItem="DQW-WO-JoQ" firstAttribute="baseline" secondItem="rnf-xC-ac8" secondAttribute="baseline" id="Ipw-dV-lus"/>
+                                    <constraint firstItem="cvm-Rg-gAj" firstAttribute="firstBaseline" secondItem="Ftb-Ww-ngb" secondAttribute="firstBaseline" id="PGQ-G0-D3B"/>
+                                    <constraint firstItem="Ftb-Ww-ngb" firstAttribute="baseline" secondItem="DQW-WO-JoQ" secondAttribute="baseline" id="V6B-Nt-THV"/>
+                                    <constraint firstItem="DQW-WO-JoQ" firstAttribute="leading" secondItem="Ftb-Ww-ngb" secondAttribute="trailing" constant="24" id="ccA-Ma-xIC"/>
+                                    <constraint firstItem="cvm-Rg-gAj" firstAttribute="bottom" secondItem="kRY-ve-3aQ" secondAttribute="bottom" id="dhu-KC-3rc"/>
+                                    <constraint firstItem="Ftb-Ww-ngb" firstAttribute="leading" secondItem="cvm-Rg-gAj" secondAttribute="trailing" constant="25" id="g3D-xc-0O3"/>
+                                    <constraint firstItem="Ftb-Ww-ngb" firstAttribute="firstBaseline" secondItem="DQW-WO-JoQ" secondAttribute="firstBaseline" id="iy5-b0-x8p"/>
+                                    <constraint firstItem="cvm-Rg-gAj" firstAttribute="leading" secondItem="kRY-ve-3aQ" secondAttribute="leading" id="tVn-xS-BNT"/>
+                                    <constraint firstItem="cvm-Rg-gAj" firstAttribute="baseline" secondItem="Ftb-Ww-ngb" secondAttribute="baseline" id="xfu-cj-5jf"/>
+                                    <constraint firstItem="rnf-xC-ac8" firstAttribute="trailing" secondItem="kRY-ve-3aQ" secondAttribute="trailing" id="xvp-Ff-gJo"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EXT-Gf-Zl4"/>
+                                        <exclude reference="PGQ-G0-D3B"/>
+                                        <exclude reference="dhu-KC-3rc"/>
+                                        <exclude reference="tVn-xS-BNT"/>
+                                        <exclude reference="xfu-cj-5jf"/>
+                                        <exclude reference="V6B-Nt-THV"/>
+                                        <exclude reference="g3D-xc-0O3"/>
+                                        <exclude reference="iy5-b0-x8p"/>
+                                        <exclude reference="Ios-RY-Kbn"/>
+                                        <exclude reference="Ipw-dV-lus"/>
+                                        <exclude reference="ccA-Ma-xIC"/>
+                                        <exclude reference="2TP-9R-6JG"/>
+                                        <exclude reference="xvp-Ff-gJo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="EXT-Gf-Zl4"/>
+                                        <include reference="PGQ-G0-D3B"/>
+                                        <include reference="dhu-KC-3rc"/>
+                                        <include reference="tVn-xS-BNT"/>
+                                        <include reference="xfu-cj-5jf"/>
+                                        <include reference="V6B-Nt-THV"/>
+                                        <include reference="g3D-xc-0O3"/>
+                                        <include reference="iy5-b0-x8p"/>
+                                        <include reference="Ios-RY-Kbn"/>
+                                        <include reference="Ipw-dV-lus"/>
+                                        <include reference="ccA-Ma-xIC"/>
+                                        <include reference="2TP-9R-6JG"/>
+                                        <include reference="xvp-Ff-gJo"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" id="U6t-aV-cem" userLabel="second row">
+                                <rect key="frame" x="16" y="644" width="358" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz0-GJ-f9T">
+                                        <rect key="frame" x="287" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="cPI-6D-Scs"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.71372549019607845" blue="0.90196078431372551" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cPI-6D-Scs"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="cPI-6D-Scs"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="AddBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2G-Zb-Dcs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-Kt-cP2">
+                                        <rect key="frame" x="96" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="8fq-Z9-GE6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="2" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="8fq-Z9-GE6"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="8fq-Z9-GE6"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmL-E2-Ron"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjA-xQ-4ah">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="lwa-nU-lS3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="1" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="lwa-nU-lS3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="lwa-nU-lS3"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="utA-yV-w5Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wD-0m-yqw">
+                                        <rect key="frame" x="191" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="JxQ-Eb-p5D"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="3" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JxQ-Eb-p5D"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="JxQ-Eb-p5D"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuL-Uv-Fcr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="JYS-BQ-3bZ"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vz0-GJ-f9T" firstAttribute="trailing" secondItem="JYS-BQ-3bZ" secondAttribute="trailing" id="0u7-9t-6yp"/>
+                                    <constraint firstItem="mFo-Kt-cP2" firstAttribute="leading" secondItem="SjA-xQ-4ah" secondAttribute="trailing" constant="25" id="1II-M8-QZH"/>
+                                    <constraint firstItem="SjA-xQ-4ah" firstAttribute="firstBaseline" secondItem="mFo-Kt-cP2" secondAttribute="firstBaseline" id="3XX-BU-1Tq"/>
+                                    <constraint firstItem="SjA-xQ-4ah" firstAttribute="bottom" secondItem="JYS-BQ-3bZ" secondAttribute="bottom" id="7C9-4K-7ac"/>
+                                    <constraint firstItem="SjA-xQ-4ah" firstAttribute="leading" secondItem="JYS-BQ-3bZ" secondAttribute="leading" id="FDu-Zk-N25"/>
+                                    <constraint firstItem="vz0-GJ-f9T" firstAttribute="leading" secondItem="5wD-0m-yqw" secondAttribute="trailing" constant="25" id="HFG-oC-qgk"/>
+                                    <constraint firstItem="5wD-0m-yqw" firstAttribute="leading" secondItem="mFo-Kt-cP2" secondAttribute="trailing" constant="24" id="MeD-BR-Wtr"/>
+                                    <constraint firstItem="SjA-xQ-4ah" firstAttribute="top" secondItem="JYS-BQ-3bZ" secondAttribute="top" id="Qxl-Ho-CTz"/>
+                                    <constraint firstItem="SjA-xQ-4ah" firstAttribute="baseline" secondItem="mFo-Kt-cP2" secondAttribute="baseline" id="StG-1O-owX"/>
+                                    <constraint firstItem="5wD-0m-yqw" firstAttribute="firstBaseline" secondItem="vz0-GJ-f9T" secondAttribute="firstBaseline" id="TIA-nx-4ht"/>
+                                    <constraint firstItem="mFo-Kt-cP2" firstAttribute="baseline" secondItem="5wD-0m-yqw" secondAttribute="baseline" id="ZTh-3h-Uau"/>
+                                    <constraint firstItem="mFo-Kt-cP2" firstAttribute="firstBaseline" secondItem="5wD-0m-yqw" secondAttribute="firstBaseline" id="bRS-U9-Mh9"/>
+                                    <constraint firstItem="5wD-0m-yqw" firstAttribute="baseline" secondItem="vz0-GJ-f9T" secondAttribute="baseline" id="k29-vl-G1X"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3XX-BU-1Tq"/>
+                                        <exclude reference="7C9-4K-7ac"/>
+                                        <exclude reference="FDu-Zk-N25"/>
+                                        <exclude reference="Qxl-Ho-CTz"/>
+                                        <exclude reference="StG-1O-owX"/>
+                                        <exclude reference="1II-M8-QZH"/>
+                                        <exclude reference="ZTh-3h-Uau"/>
+                                        <exclude reference="bRS-U9-Mh9"/>
+                                        <exclude reference="MeD-BR-Wtr"/>
+                                        <exclude reference="TIA-nx-4ht"/>
+                                        <exclude reference="k29-vl-G1X"/>
+                                        <exclude reference="0u7-9t-6yp"/>
+                                        <exclude reference="HFG-oC-qgk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3XX-BU-1Tq"/>
+                                        <include reference="7C9-4K-7ac"/>
+                                        <include reference="FDu-Zk-N25"/>
+                                        <include reference="Qxl-Ho-CTz"/>
+                                        <include reference="StG-1O-owX"/>
+                                        <include reference="1II-M8-QZH"/>
+                                        <include reference="ZTh-3h-Uau"/>
+                                        <include reference="bRS-U9-Mh9"/>
+                                        <include reference="MeD-BR-Wtr"/>
+                                        <include reference="TIA-nx-4ht"/>
+                                        <include reference="k29-vl-G1X"/>
+                                        <include reference="0u7-9t-6yp"/>
+                                        <include reference="HFG-oC-qgk"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwA-kv-5eb" userLabel="first row">
+                                <rect key="frame" x="16" y="732" width="358" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T1-8v-t6K">
+                                        <rect key="frame" x="287" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="xix-Qq-vA3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="=" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.6470588235294118" blue="0.25098039215686274" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="xix-Qq-vA3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="xix-Qq-vA3"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="EqualBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jpp-4s-Qgb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERV-yg-QFb">
+                                        <rect key="frame" x="96" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="H5A-Or-tBW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="." cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="H5A-Or-tBW"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="H5A-Or-tBW"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="DotBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OUM-xY-ke5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO2-rT-sHi">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="teh-41-BQe"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="0" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.40000000000000002" alpha="0.65125724337748347" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="teh-41-BQe"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="teh-41-BQe"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gna-aj-Hn0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMq-Vw-Mmp">
+                                        <rect key="frame" x="191" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="Z8u-5f-NzK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+/-" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.71372549019607845" blue="0.90196078431372551" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Z8u-5f-NzK"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Z8u-5f-NzK"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="PlusMinusBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="91O-Ks-JHP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UO2-rT-sHi" firstAttribute="centerY" secondItem="JwA-kv-5eb" secondAttribute="centerY" id="0SA-pn-lRv"/>
+                                    <constraint firstItem="UO2-rT-sHi" firstAttribute="leading" secondItem="JwA-kv-5eb" secondAttribute="leading" id="4DE-mh-lHr"/>
+                                    <constraint firstItem="UO2-rT-sHi" firstAttribute="firstBaseline" secondItem="ERV-yg-QFb" secondAttribute="firstBaseline" id="8ci-kS-edX"/>
+                                    <constraint firstAttribute="trailing" secondItem="6T1-8v-t6K" secondAttribute="trailing" id="D1C-6K-arN"/>
+                                    <constraint firstItem="DMq-Vw-Mmp" firstAttribute="baseline" secondItem="6T1-8v-t6K" secondAttribute="baseline" id="Gfg-hz-I4a"/>
+                                    <constraint firstItem="ERV-yg-QFb" firstAttribute="leading" secondItem="UO2-rT-sHi" secondAttribute="trailing" constant="25" id="KXG-bZ-aO8"/>
+                                    <constraint firstItem="UO2-rT-sHi" firstAttribute="baseline" secondItem="ERV-yg-QFb" secondAttribute="baseline" id="VWK-Cg-BJo"/>
+                                    <constraint firstItem="DMq-Vw-Mmp" firstAttribute="firstBaseline" secondItem="6T1-8v-t6K" secondAttribute="firstBaseline" id="YAW-IZ-HSt"/>
+                                    <constraint firstItem="6T1-8v-t6K" firstAttribute="leading" secondItem="DMq-Vw-Mmp" secondAttribute="trailing" constant="25" id="bTS-bl-fuO"/>
+                                    <constraint firstItem="UO2-rT-sHi" firstAttribute="top" secondItem="JwA-kv-5eb" secondAttribute="top" id="c2s-Yp-Vxi"/>
+                                    <constraint firstItem="ERV-yg-QFb" firstAttribute="baseline" secondItem="DMq-Vw-Mmp" secondAttribute="baseline" id="rft-50-AMR"/>
+                                    <constraint firstItem="DMq-Vw-Mmp" firstAttribute="leading" secondItem="ERV-yg-QFb" secondAttribute="trailing" constant="24" id="v3V-vg-TUX"/>
+                                    <constraint firstItem="ERV-yg-QFb" firstAttribute="firstBaseline" secondItem="DMq-Vw-Mmp" secondAttribute="firstBaseline" id="v68-uJ-Oz5"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0SA-pn-lRv"/>
+                                        <exclude reference="4DE-mh-lHr"/>
+                                        <exclude reference="8ci-kS-edX"/>
+                                        <exclude reference="VWK-Cg-BJo"/>
+                                        <exclude reference="c2s-Yp-Vxi"/>
+                                        <exclude reference="KXG-bZ-aO8"/>
+                                        <exclude reference="rft-50-AMR"/>
+                                        <exclude reference="v68-uJ-Oz5"/>
+                                        <exclude reference="Gfg-hz-I4a"/>
+                                        <exclude reference="YAW-IZ-HSt"/>
+                                        <exclude reference="v3V-vg-TUX"/>
+                                        <exclude reference="D1C-6K-arN"/>
+                                        <exclude reference="bTS-bl-fuO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0SA-pn-lRv"/>
+                                        <include reference="4DE-mh-lHr"/>
+                                        <include reference="8ci-kS-edX"/>
+                                        <include reference="VWK-Cg-BJo"/>
+                                        <include reference="c2s-Yp-Vxi"/>
+                                        <include reference="KXG-bZ-aO8"/>
+                                        <include reference="rft-50-AMR"/>
+                                        <include reference="v68-uJ-Oz5"/>
+                                        <include reference="Gfg-hz-I4a"/>
+                                        <include reference="YAW-IZ-HSt"/>
+                                        <include reference="v3V-vg-TUX"/>
+                                        <include reference="D1C-6K-arN"/>
+                                        <include reference="bTS-bl-fuO"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456789" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzh-p6-k6p">
+                                <rect key="frame" x="79" y="30" width="725" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="kuf-Rd-sAh" userLabel="first row landscape">
+                                <rect key="frame" x="51" y="276" width="801" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNZ-Fj-Gzi">
+                                        <rect key="frame" x="527" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="JhQ-Rb-geo"/>
+                                            <constraint firstAttribute="width" constant="71" id="UFy-ni-Typ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="2" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JhQ-Rb-geo"/>
+                                                <exclude reference="UFy-ni-Typ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="JhQ-Rb-geo"/>
+                                                <include reference="UFy-ni-Typ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FIG-ae-Dif"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4O-OX-Rmo">
+                                        <rect key="frame" x="448" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="jGJ-Oi-ZFd"/>
+                                            <constraint firstAttribute="width" constant="71" id="oho-Pa-q7d"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="1" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jGJ-Oi-ZFd"/>
+                                                <exclude reference="oho-Pa-q7d"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="jGJ-Oi-ZFd"/>
+                                                <include reference="oho-Pa-q7d"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVb-0r-alr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvK-HP-RWV">
+                                        <rect key="frame" x="606" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="E60-H4-8hO"/>
+                                            <constraint firstAttribute="width" constant="71" id="uYh-a3-FdE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="3" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="E60-H4-8hO"/>
+                                                <exclude reference="uYh-a3-FdE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="E60-H4-8hO"/>
+                                                <include reference="uYh-a3-FdE"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IwT-Ln-x5G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSF-GR-BaZ">
+                                        <rect key="frame" x="269" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="Q5c-1l-mtH"/>
+                                            <constraint firstAttribute="height" constant="64" id="zAw-8A-wZz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Q5c-1l-mtH"/>
+                                                <exclude reference="zAw-8A-wZz"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Q5c-1l-mtH"/>
+                                                <include reference="zAw-8A-wZz"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="SubtractBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBW-wW-dDK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP0-Cw-7Oh">
+                                        <rect key="frame" x="356" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="hrx-Hx-tyj"/>
+                                            <constraint firstAttribute="width" constant="71" id="pCw-mM-6ag"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hrx-Hx-tyj"/>
+                                                <exclude reference="pCw-mM-6ag"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="hrx-Hx-tyj"/>
+                                                <include reference="pCw-mM-6ag"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="AddBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAD-re-heF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsp-ED-Q32">
+                                        <rect key="frame" x="9" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="665-p2-p8J"/>
+                                            <constraint firstAttribute="width" constant="71" id="mFd-0D-XVr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="sin" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="665-p2-p8J"/>
+                                                <exclude reference="mFd-0D-XVr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="665-p2-p8J"/>
+                                                <include reference="mFd-0D-XVr"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO5-vX-t5q">
+                                        <rect key="frame" x="96" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="0dU-J7-EJj"/>
+                                            <constraint firstAttribute="width" constant="71" id="CxR-FV-jzO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="cos" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="0dU-J7-EJj"/>
+                                                <exclude reference="CxR-FV-jzO"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="0dU-J7-EJj"/>
+                                                <include reference="CxR-FV-jzO"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsT-f5-txZ">
+                                        <rect key="frame" x="183" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="hAN-ii-XYx"/>
+                                            <constraint firstAttribute="width" constant="71" id="lmL-eN-r9S"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="tan" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hAN-ii-XYx"/>
+                                                <exclude reference="lmL-eN-r9S"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="hAN-ii-XYx"/>
+                                                <include reference="lmL-eN-r9S"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srg-AA-5Qq">
+                                        <rect key="frame" x="685" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="HKo-bK-3oN"/>
+                                            <constraint firstAttribute="height" constant="64" id="P8G-Ad-vZQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="=" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.64705882349999999" blue="0.25098039220000001" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="HKo-bK-3oN"/>
+                                                <exclude reference="P8G-Ad-vZQ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="HKo-bK-3oN"/>
+                                                <include reference="P8G-Ad-vZQ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="EqualBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Juj-7P-Aqd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Wjq-ia-gIe"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Srg-AA-5Qq" firstAttribute="leading" secondItem="pvK-HP-RWV" secondAttribute="trailing" constant="8" symbolic="YES" id="2We-7u-CQZ"/>
+                                    <constraint firstItem="pP0-Cw-7Oh" firstAttribute="leading" secondItem="sSF-GR-BaZ" secondAttribute="trailing" constant="16" id="Adf-Fz-YeD"/>
+                                    <constraint firstItem="FsT-f5-txZ" firstAttribute="leading" secondItem="UO5-vX-t5q" secondAttribute="trailing" constant="16" id="Anb-h3-yJi"/>
+                                    <constraint firstItem="FsT-f5-txZ" firstAttribute="baseline" secondItem="pP0-Cw-7Oh" secondAttribute="baseline" id="CWP-Fc-UmU"/>
+                                    <constraint firstItem="UO5-vX-t5q" firstAttribute="leading" secondItem="Tsp-ED-Q32" secondAttribute="trailing" constant="16" id="Fpp-vx-EYl"/>
+                                    <constraint firstItem="pNZ-Fj-Gzi" firstAttribute="leading" secondItem="e4O-OX-Rmo" secondAttribute="trailing" constant="8" symbolic="YES" id="LJt-IC-83a"/>
+                                    <constraint firstItem="Tsp-ED-Q32" firstAttribute="baseline" secondItem="UO5-vX-t5q" secondAttribute="baseline" id="Lpy-hd-ccl"/>
+                                    <constraint firstItem="pvK-HP-RWV" firstAttribute="baseline" secondItem="Srg-AA-5Qq" secondAttribute="baseline" id="N8u-wB-4xb"/>
+                                    <constraint firstItem="UO5-vX-t5q" firstAttribute="baseline" secondItem="FsT-f5-txZ" secondAttribute="baseline" id="VJK-fJ-GF8"/>
+                                    <constraint firstItem="Tsp-ED-Q32" firstAttribute="top" secondItem="Wjq-ia-gIe" secondAttribute="top" id="VJX-CE-ZMH"/>
+                                    <constraint firstItem="pP0-Cw-7Oh" firstAttribute="baseline" secondItem="e4O-OX-Rmo" secondAttribute="baseline" id="XlZ-8T-DdE"/>
+                                    <constraint firstItem="FsT-f5-txZ" firstAttribute="top" secondItem="sSF-GR-BaZ" secondAttribute="top" id="ZZQ-rf-qdc"/>
+                                    <constraint firstItem="Tsp-ED-Q32" firstAttribute="leading" secondItem="Wjq-ia-gIe" secondAttribute="leading" constant="9" id="hSW-Ry-LHc"/>
+                                    <constraint firstItem="pNZ-Fj-Gzi" firstAttribute="baseline" secondItem="pvK-HP-RWV" secondAttribute="baseline" id="hsh-2f-1p2"/>
+                                    <constraint firstItem="e4O-OX-Rmo" firstAttribute="baseline" secondItem="pNZ-Fj-Gzi" secondAttribute="baseline" id="hyv-za-fES"/>
+                                    <constraint firstItem="sSF-GR-BaZ" firstAttribute="leading" secondItem="FsT-f5-txZ" secondAttribute="trailing" constant="15" id="oYn-13-8oe"/>
+                                    <constraint firstItem="e4O-OX-Rmo" firstAttribute="leading" secondItem="pP0-Cw-7Oh" secondAttribute="trailing" constant="21" id="paJ-vR-ETm"/>
+                                    <constraint firstItem="pvK-HP-RWV" firstAttribute="leading" secondItem="pNZ-Fj-Gzi" secondAttribute="trailing" constant="8" symbolic="YES" id="sW8-gI-bDH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lpy-hd-ccl"/>
+                                        <exclude reference="VJX-CE-ZMH"/>
+                                        <exclude reference="hSW-Ry-LHc"/>
+                                        <exclude reference="Fpp-vx-EYl"/>
+                                        <exclude reference="VJK-fJ-GF8"/>
+                                        <exclude reference="Anb-h3-yJi"/>
+                                        <exclude reference="CWP-Fc-UmU"/>
+                                        <exclude reference="ZZQ-rf-qdc"/>
+                                        <exclude reference="oYn-13-8oe"/>
+                                        <exclude reference="Adf-Fz-YeD"/>
+                                        <exclude reference="XlZ-8T-DdE"/>
+                                        <exclude reference="hyv-za-fES"/>
+                                        <exclude reference="paJ-vR-ETm"/>
+                                        <exclude reference="LJt-IC-83a"/>
+                                        <exclude reference="hsh-2f-1p2"/>
+                                        <exclude reference="N8u-wB-4xb"/>
+                                        <exclude reference="sW8-gI-bDH"/>
+                                        <exclude reference="2We-7u-CQZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lpy-hd-ccl"/>
+                                        <include reference="VJX-CE-ZMH"/>
+                                        <include reference="hSW-Ry-LHc"/>
+                                        <include reference="Fpp-vx-EYl"/>
+                                        <include reference="VJK-fJ-GF8"/>
+                                        <include reference="Anb-h3-yJi"/>
+                                        <include reference="CWP-Fc-UmU"/>
+                                        <include reference="ZZQ-rf-qdc"/>
+                                        <include reference="oYn-13-8oe"/>
+                                        <include reference="Adf-Fz-YeD"/>
+                                        <include reference="XlZ-8T-DdE"/>
+                                        <include reference="hyv-za-fES"/>
+                                        <include reference="paJ-vR-ETm"/>
+                                        <include reference="LJt-IC-83a"/>
+                                        <include reference="hsh-2f-1p2"/>
+                                        <include reference="N8u-wB-4xb"/>
+                                        <include reference="sW8-gI-bDH"/>
+                                        <include reference="2We-7u-CQZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="16V-sa-R4q" userLabel="second row landscape">
+                                <rect key="frame" x="51" y="202" width="801" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ly4-MC-h2p" userLabel="x²">
+                                        <rect key="frame" x="8" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="1Cl-1J-SkI"/>
+                                            <constraint firstAttribute="width" constant="71" id="504-zR-LFE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="x²" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1Cl-1J-SkI"/>
+                                                <exclude reference="504-zR-LFE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="1Cl-1J-SkI"/>
+                                                <include reference="504-zR-LFE"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8W-sg-hbD" userLabel="π">
+                                        <rect key="frame" x="183" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="nMB-XH-fgu"/>
+                                            <constraint firstAttribute="height" constant="64" id="xt3-kX-b3g"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="π" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nMB-XH-fgu"/>
+                                                <exclude reference="xt3-kX-b3g"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="nMB-XH-fgu"/>
+                                                <include reference="xt3-kX-b3g"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y51-hE-RCf">
+                                        <rect key="frame" x="271" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="HLX-mc-AcV"/>
+                                            <constraint firstAttribute="width" constant="71" id="uNb-7o-Zxm"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="/" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="HLX-mc-AcV"/>
+                                                <exclude reference="uNb-7o-Zxm"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="HLX-mc-AcV"/>
+                                                <include reference="uNb-7o-Zxm"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="DivideBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6BK-IV-6U6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWl-bP-0nZ">
+                                        <rect key="frame" x="357.66666666666669" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="NNf-uf-5R4"/>
+                                            <constraint firstAttribute="height" constant="64" id="rRu-vA-hF4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="*" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="NNf-uf-5R4"/>
+                                                <exclude reference="rRu-vA-hF4"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="NNf-uf-5R4"/>
+                                                <include reference="rRu-vA-hF4"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="MultiplyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mz-Oe-vaT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ih-Kd-I2Z">
+                                        <rect key="frame" x="526.66666666666663" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="7J7-fs-lld"/>
+                                            <constraint firstAttribute="width" constant="71" id="aao-Rq-5Y7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="5" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="7J7-fs-lld"/>
+                                                <exclude reference="aao-Rq-5Y7"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="7J7-fs-lld"/>
+                                                <include reference="aao-Rq-5Y7"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNg-th-kF7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPr-Xg-DqA">
+                                        <rect key="frame" x="604.66666666666663" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="OtL-8u-J2G"/>
+                                            <constraint firstAttribute="height" constant="64" id="ZJr-Rt-4hq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="6" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="OtL-8u-J2G"/>
+                                                <exclude reference="ZJr-Rt-4hq"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="OtL-8u-J2G"/>
+                                                <include reference="ZJr-Rt-4hq"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivl-6G-iUK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="121-9u-xq3">
+                                        <rect key="frame" x="448.66666666666669" y="1" width="71.000000000000057" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="JPP-hu-NWR"/>
+                                            <constraint firstAttribute="width" constant="71.000000000000057" id="Tyb-4B-oC3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="4" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="JPP-hu-NWR"/>
+                                                <exclude reference="Tyb-4B-oC3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="JPP-hu-NWR"/>
+                                                <include reference="Tyb-4B-oC3"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vl1-Z5-ARh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNU-DJ-1DH">
+                                        <rect key="frame" x="686.66666666666663" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="mJj-W7-Nxx"/>
+                                            <constraint firstAttribute="height" constant="64" id="xWO-SF-l6v"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="." cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="mJj-W7-Nxx"/>
+                                                <exclude reference="xWO-SF-l6v"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="mJj-W7-Nxx"/>
+                                                <include reference="xWO-SF-l6v"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="DotBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Zf-fW-1Fk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-51-i9V" userLabel="√x">
+                                        <rect key="frame" x="96" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="iEW-gE-sff"/>
+                                            <constraint firstAttribute="width" constant="71" id="zoI-8D-48H"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="√x" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="iEW-gE-sff"/>
+                                                <exclude reference="zoI-8D-48H"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="iEW-gE-sff"/>
+                                                <include reference="zoI-8D-48H"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="R8A-oe-z8R"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="o8W-sg-hbD" firstAttribute="leading" secondItem="YjS-51-i9V" secondAttribute="trailing" constant="16" id="5Wx-85-4hP"/>
+                                    <constraint firstItem="qPr-Xg-DqA" firstAttribute="top" secondItem="RNU-DJ-1DH" secondAttribute="top" id="7E6-Ow-zW2"/>
+                                    <constraint firstItem="8ih-Kd-I2Z" firstAttribute="baseline" secondItem="qPr-Xg-DqA" secondAttribute="baseline" id="GzJ-ug-WrZ"/>
+                                    <constraint firstItem="121-9u-xq3" firstAttribute="baseline" secondItem="8ih-Kd-I2Z" secondAttribute="baseline" id="HQv-SW-zdD"/>
+                                    <constraint firstItem="RNU-DJ-1DH" firstAttribute="leading" secondItem="qPr-Xg-DqA" secondAttribute="trailing" constant="11" id="Iw8-BK-njq"/>
+                                    <constraint firstItem="XWl-bP-0nZ" firstAttribute="baseline" secondItem="RNU-DJ-1DH" secondAttribute="baseline" id="KvM-b1-W0d"/>
+                                    <constraint firstItem="YjS-51-i9V" firstAttribute="top" secondItem="R8A-oe-z8R" secondAttribute="top" constant="1" id="LW6-Q9-V19"/>
+                                    <constraint firstItem="Ly4-MC-h2p" firstAttribute="baseline" secondItem="o8W-sg-hbD" secondAttribute="baseline" id="P7w-uP-9jk"/>
+                                    <constraint firstItem="XWl-bP-0nZ" firstAttribute="leading" secondItem="Y51-hE-RCf" secondAttribute="trailing" constant="15.666666666666686" id="R7O-Fn-4Ax"/>
+                                    <constraint firstItem="Ly4-MC-h2p" firstAttribute="top" secondItem="R8A-oe-z8R" secondAttribute="top" id="UU5-DI-Tnh"/>
+                                    <constraint firstItem="8ih-Kd-I2Z" firstAttribute="leading" secondItem="121-9u-xq3" secondAttribute="trailing" constant="6.9999999999998863" id="ZDI-Ej-U5T"/>
+                                    <constraint firstItem="YjS-51-i9V" firstAttribute="leading" secondItem="Ly4-MC-h2p" secondAttribute="trailing" constant="17" id="dVD-5y-CV3"/>
+                                    <constraint firstItem="qPr-Xg-DqA" firstAttribute="leading" secondItem="8ih-Kd-I2Z" secondAttribute="trailing" constant="7" id="eFs-ji-EzA"/>
+                                    <constraint firstItem="Y51-hE-RCf" firstAttribute="leading" secondItem="o8W-sg-hbD" secondAttribute="trailing" constant="17" id="fdR-PN-9xz"/>
+                                    <constraint firstItem="121-9u-xq3" firstAttribute="leading" secondItem="XWl-bP-0nZ" secondAttribute="trailing" constant="20.000000000000057" id="imk-hG-KOW"/>
+                                    <constraint firstItem="Y51-hE-RCf" firstAttribute="baseline" secondItem="121-9u-xq3" secondAttribute="baseline" id="qiy-Yh-JwG"/>
+                                    <constraint firstItem="Ly4-MC-h2p" firstAttribute="leading" secondItem="16V-sa-R4q" secondAttribute="leadingMargin" id="rUa-xL-CCo"/>
+                                    <constraint firstItem="YjS-51-i9V" firstAttribute="baseline" secondItem="XWl-bP-0nZ" secondAttribute="baseline" id="xYS-2h-PIt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P7w-uP-9jk"/>
+                                        <exclude reference="UU5-DI-Tnh"/>
+                                        <exclude reference="rUa-xL-CCo"/>
+                                        <exclude reference="LW6-Q9-V19"/>
+                                        <exclude reference="dVD-5y-CV3"/>
+                                        <exclude reference="xYS-2h-PIt"/>
+                                        <exclude reference="5Wx-85-4hP"/>
+                                        <exclude reference="fdR-PN-9xz"/>
+                                        <exclude reference="qiy-Yh-JwG"/>
+                                        <exclude reference="KvM-b1-W0d"/>
+                                        <exclude reference="R7O-Fn-4Ax"/>
+                                        <exclude reference="HQv-SW-zdD"/>
+                                        <exclude reference="imk-hG-KOW"/>
+                                        <exclude reference="GzJ-ug-WrZ"/>
+                                        <exclude reference="ZDI-Ej-U5T"/>
+                                        <exclude reference="7E6-Ow-zW2"/>
+                                        <exclude reference="eFs-ji-EzA"/>
+                                        <exclude reference="Iw8-BK-njq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="P7w-uP-9jk"/>
+                                        <include reference="UU5-DI-Tnh"/>
+                                        <include reference="rUa-xL-CCo"/>
+                                        <include reference="LW6-Q9-V19"/>
+                                        <include reference="dVD-5y-CV3"/>
+                                        <include reference="xYS-2h-PIt"/>
+                                        <include reference="5Wx-85-4hP"/>
+                                        <include reference="fdR-PN-9xz"/>
+                                        <include reference="qiy-Yh-JwG"/>
+                                        <include reference="KvM-b1-W0d"/>
+                                        <include reference="R7O-Fn-4Ax"/>
+                                        <include reference="HQv-SW-zdD"/>
+                                        <include reference="imk-hG-KOW"/>
+                                        <include reference="GzJ-ug-WrZ"/>
+                                        <include reference="ZDI-Ej-U5T"/>
+                                        <include reference="7E6-Ow-zW2"/>
+                                        <include reference="eFs-ji-EzA"/>
+                                        <include reference="Iw8-BK-njq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="IMS-oV-1Yi" userLabel="third row landscape">
+                                <rect key="frame" x="51" y="130" width="801" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FG-db-eJ2">
+                                        <rect key="frame" x="526" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="1Al-4g-bt4"/>
+                                            <constraint firstAttribute="height" constant="64" id="CMX-7M-GOg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="8" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1Al-4g-bt4"/>
+                                                <exclude reference="CMX-7M-GOg"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="1Al-4g-bt4"/>
+                                                <include reference="CMX-7M-GOg"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrt-BS-oaD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-LQ-LUT">
+                                        <rect key="frame" x="447" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="8eQ-z6-K7T"/>
+                                            <constraint firstAttribute="height" constant="64" id="RZB-6i-j5n"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="7" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="8eQ-z6-K7T"/>
+                                                <exclude reference="RZB-6i-j5n"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="8eQ-z6-K7T"/>
+                                                <include reference="RZB-6i-j5n"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tl3-xS-yLx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-Pr-V7T">
+                                        <rect key="frame" x="605" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="2OR-Nn-95G"/>
+                                            <constraint firstAttribute="height" constant="64" id="JAz-EN-DXv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="9" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="2OR-Nn-95G"/>
+                                                <exclude reference="JAz-EN-DXv"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="2OR-Nn-95G"/>
+                                                <include reference="JAz-EN-DXv"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tRT-3g-8sh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nb-oQ-8CF">
+                                        <rect key="frame" x="356" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="jfc-uR-uzR"/>
+                                            <constraint firstAttribute="width" constant="71" id="wci-ls-oxc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="%" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jfc-uR-uzR"/>
+                                                <exclude reference="wci-ls-oxc"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="jfc-uR-uzR"/>
+                                                <include reference="wci-ls-oxc"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="PercentageBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWt-M7-Dku"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OD-iU-Qcc">
+                                        <rect key="frame" x="182" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="50p-i9-xbQ"/>
+                                            <constraint firstAttribute="height" constant="64" id="NEg-49-3m8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rand" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="50p-i9-xbQ"/>
+                                                <exclude reference="NEg-49-3m8"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="50p-i9-xbQ"/>
+                                                <include reference="NEg-49-3m8"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Al-zZ-hwT">
+                                        <rect key="frame" x="8" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="Fcz-bf-EHl"/>
+                                            <constraint firstAttribute="height" constant="64" id="cIj-SE-Sqo"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="C" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="22">
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.062745098040000002" blue="0.45098039220000002" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Fcz-bf-EHl"/>
+                                                <exclude reference="cIj-SE-Sqo"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Fcz-bf-EHl"/>
+                                                <include reference="cIj-SE-Sqo"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="ClearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6vE-fd-W82"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt6-Gv-ibi">
+                                        <rect key="frame" x="270" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Xei-W5-wIi"/>
+                                            <constraint firstAttribute="width" constant="71" id="zk4-2e-bUN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+/-" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.20392156859999999" green="0.71372549019999998" blue="0.90196078430000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Xei-W5-wIi"/>
+                                                <exclude reference="zk4-2e-bUN"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Xei-W5-wIi"/>
+                                                <include reference="zk4-2e-bUN"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="PlusMinusBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIg-NI-4Ay"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEh-nk-4h2">
+                                        <rect key="frame" x="95" y="0.0" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Est-ut-yQx"/>
+                                            <constraint firstAttribute="width" constant="71" id="U8f-q4-dmq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="⌫" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="22">
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.062745098040000002" blue="0.45098039220000002" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Est-ut-yQx"/>
+                                                <exclude reference="U8f-q4-dmq"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Est-ut-yQx"/>
+                                                <include reference="U8f-q4-dmq"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="BackSpaceBtnPessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oV-eN-BeT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2j-Av-nx7">
+                                        <rect key="frame" x="684" y="1" width="71" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="bwN-vo-nGN"/>
+                                            <constraint firstAttribute="height" constant="64" id="fd6-m5-G1J"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="0" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.40000000000000002" alpha="0.65125724340000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="bwN-vo-nGN"/>
+                                                <exclude reference="fd6-m5-G1J"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="bwN-vo-nGN"/>
+                                                <include reference="fd6-m5-G1J"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="NumberBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7qQ-RY-ZY6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="YTl-sV-cEZ"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.023529411760000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9Al-zZ-hwT" firstAttribute="baseline" secondItem="gt6-Gv-ibi" secondAttribute="baseline" id="2Ns-PH-D3a"/>
+                                    <constraint firstItem="gt6-Gv-ibi" firstAttribute="leading" secondItem="4OD-iU-Qcc" secondAttribute="trailing" constant="17" id="4ov-T6-8Lc"/>
+                                    <constraint firstItem="V2j-Av-nx7" firstAttribute="leading" secondItem="gnd-Pr-V7T" secondAttribute="trailing" constant="8" symbolic="YES" id="AZx-9N-wY5"/>
+                                    <constraint firstItem="gnd-Pr-V7T" firstAttribute="leading" secondItem="1FG-db-eJ2" secondAttribute="trailing" constant="8" symbolic="YES" id="Gti-YB-dqb"/>
+                                    <constraint firstItem="gnd-Pr-V7T" firstAttribute="baseline" secondItem="V2j-Av-nx7" secondAttribute="baseline" id="LQ6-u1-laa"/>
+                                    <constraint firstItem="jEh-nk-4h2" firstAttribute="leading" secondItem="9Al-zZ-hwT" secondAttribute="trailing" constant="16" id="MQW-zQ-LRt"/>
+                                    <constraint firstItem="3nb-oQ-8CF" firstAttribute="baseline" secondItem="Yvv-LQ-LUT" secondAttribute="baseline" id="Ol6-I1-CvV"/>
+                                    <constraint firstItem="9Al-zZ-hwT" firstAttribute="top" secondItem="jEh-nk-4h2" secondAttribute="top" id="Qs2-l4-awV"/>
+                                    <constraint firstItem="3nb-oQ-8CF" firstAttribute="top" secondItem="YTl-sV-cEZ" secondAttribute="top" constant="1" id="Rsn-o9-tDq"/>
+                                    <constraint firstItem="9Al-zZ-hwT" firstAttribute="top" secondItem="YTl-sV-cEZ" secondAttribute="top" id="cPE-oh-cRw"/>
+                                    <constraint firstItem="4OD-iU-Qcc" firstAttribute="leading" secondItem="jEh-nk-4h2" secondAttribute="trailing" constant="16" id="eSU-fs-Sx3"/>
+                                    <constraint firstItem="3nb-oQ-8CF" firstAttribute="leading" secondItem="gt6-Gv-ibi" secondAttribute="trailing" constant="15" id="fkP-AT-SY4"/>
+                                    <constraint firstItem="Yvv-LQ-LUT" firstAttribute="leading" secondItem="3nb-oQ-8CF" secondAttribute="trailing" constant="20" id="gzv-WC-gfi"/>
+                                    <constraint firstItem="1FG-db-eJ2" firstAttribute="baseline" secondItem="gnd-Pr-V7T" secondAttribute="baseline" id="kmC-u4-3TF"/>
+                                    <constraint firstItem="jEh-nk-4h2" firstAttribute="top" secondItem="4OD-iU-Qcc" secondAttribute="top" id="ktG-3p-WLo"/>
+                                    <constraint firstItem="Yvv-LQ-LUT" firstAttribute="baseline" secondItem="1FG-db-eJ2" secondAttribute="baseline" id="mMB-zN-7ll"/>
+                                    <constraint firstItem="9Al-zZ-hwT" firstAttribute="leading" secondItem="IMS-oV-1Yi" secondAttribute="leadingMargin" id="p3T-3y-hQ7"/>
+                                    <constraint firstItem="1FG-db-eJ2" firstAttribute="leading" secondItem="Yvv-LQ-LUT" secondAttribute="trailing" constant="8" symbolic="YES" id="wH9-wz-Pon"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Ns-PH-D3a"/>
+                                        <exclude reference="Qs2-l4-awV"/>
+                                        <exclude reference="cPE-oh-cRw"/>
+                                        <exclude reference="p3T-3y-hQ7"/>
+                                        <exclude reference="MQW-zQ-LRt"/>
+                                        <exclude reference="ktG-3p-WLo"/>
+                                        <exclude reference="eSU-fs-Sx3"/>
+                                        <exclude reference="4ov-T6-8Lc"/>
+                                        <exclude reference="Ol6-I1-CvV"/>
+                                        <exclude reference="Rsn-o9-tDq"/>
+                                        <exclude reference="fkP-AT-SY4"/>
+                                        <exclude reference="gzv-WC-gfi"/>
+                                        <exclude reference="mMB-zN-7ll"/>
+                                        <exclude reference="kmC-u4-3TF"/>
+                                        <exclude reference="wH9-wz-Pon"/>
+                                        <exclude reference="Gti-YB-dqb"/>
+                                        <exclude reference="LQ6-u1-laa"/>
+                                        <exclude reference="AZx-9N-wY5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2Ns-PH-D3a"/>
+                                        <include reference="Qs2-l4-awV"/>
+                                        <include reference="cPE-oh-cRw"/>
+                                        <include reference="p3T-3y-hQ7"/>
+                                        <include reference="MQW-zQ-LRt"/>
+                                        <include reference="ktG-3p-WLo"/>
+                                        <include reference="eSU-fs-Sx3"/>
+                                        <include reference="4ov-T6-8Lc"/>
+                                        <include reference="Ol6-I1-CvV"/>
+                                        <include reference="Rsn-o9-tDq"/>
+                                        <include reference="fkP-AT-SY4"/>
+                                        <include reference="gzv-WC-gfi"/>
+                                        <include reference="mMB-zN-7ll"/>
+                                        <include reference="kmC-u4-3TF"/>
+                                        <include reference="wH9-wz-Pon"/>
+                                        <include reference="Gti-YB-dqb"/>
+                                        <include reference="LQ6-u1-laa"/>
+                                        <include reference="AZx-9N-wY5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.023529411764705882" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kzh-p6-k6p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-29" id="1AG-Q5-XAV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JwA-kv-5eb" secondAttribute="bottom" constant="22" id="1E5-zB-Rkf"/>
+                            <constraint firstItem="Kzh-p6-k6p" firstAttribute="leading" secondItem="q4i-iU-YP1" secondAttribute="leading" id="2hQ-DU-FSR"/>
+                            <constraint firstItem="JwA-kv-5eb" firstAttribute="leading" secondItem="U6t-aV-cem" secondAttribute="leading" id="9Ck-2w-JS7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kzh-p6-k6p" secondAttribute="trailing" constant="48" id="Ln4-rX-78W"/>
+                            <constraint firstItem="Kzh-p6-k6p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="MF5-Hd-nVJ"/>
+                            <constraint firstItem="Kzh-p6-k6p" firstAttribute="trailing" secondItem="q4i-iU-YP1" secondAttribute="trailing" id="MkO-4N-gF4"/>
+                            <constraint firstItem="JwA-kv-5eb" firstAttribute="trailing" secondItem="U6t-aV-cem" secondAttribute="trailing" id="PmG-mc-8gD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kzh-p6-k6p" secondAttribute="bottom" constant="270" id="Z03-qY-2fH"/>
+                            <constraint firstItem="q4i-iU-YP1" firstAttribute="top" secondItem="Kzh-p6-k6p" secondAttribute="bottom" constant="85" id="arF-gb-f6n"/>
+                            <constraint firstItem="JwA-kv-5eb" firstAttribute="top" secondItem="U6t-aV-cem" secondAttribute="bottom" constant="24" id="e35-GK-8Uy"/>
+                            <constraint firstItem="Kzh-p6-k6p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="e42-h1-dcg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1E5-zB-Rkf"/>
+                                <exclude reference="Ln4-rX-78W"/>
+                                <exclude reference="Z03-qY-2fH"/>
+                                <exclude reference="1AG-Q5-XAV"/>
+                                <exclude reference="2hQ-DU-FSR"/>
+                                <exclude reference="MF5-Hd-nVJ"/>
+                                <exclude reference="MkO-4N-gF4"/>
+                                <exclude reference="e42-h1-dcg"/>
+                                <exclude reference="arF-gb-f6n"/>
+                                <exclude reference="9Ck-2w-JS7"/>
+                                <exclude reference="PmG-mc-8gD"/>
+                                <exclude reference="e35-GK-8Uy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Ln4-rX-78W"/>
+                                <include reference="Z03-qY-2fH"/>
+                                <include reference="1AG-Q5-XAV"/>
+                                <include reference="e42-h1-dcg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="1E5-zB-Rkf"/>
+                                <include reference="2hQ-DU-FSR"/>
+                                <include reference="MF5-Hd-nVJ"/>
+                                <include reference="MkO-4N-gF4"/>
+                                <include reference="arF-gb-f6n"/>
+                                <include reference="9Ck-2w-JS7"/>
+                                <include reference="PmG-mc-8gD"/>
+                                <include reference="e35-GK-8Uy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="resultLbl" destination="Kzh-p6-k6p" id="Zco-31-fW3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.577464788732396" y="2.2900763358778624"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
