@@ -129,6 +129,7 @@ class ViewController: UIViewController {
     
     @IBAction func RandomBtnPressed(_ sender: UIButton) {
         let randomNumber = Double.random(in:0...0.99)
+        currentNumber = "\(randomNumber)"
         resultLbl.text = "\(randomNumber)"
     }
     
