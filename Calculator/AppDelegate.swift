@@ -1,6 +1,6 @@
 /**App Name: Calculator
 Version: 2.0
-Created on: 08-10-2022
+Created on: 22-10-2022
  
  
 Created by:
@@ -14,7 +14,9 @@ Kowndinya Varanasi 301210621
 
 Description:
 This is a Calculator App that will be used to calculate the basic
-arithmetic operations such as addition, subtraction, multiplication, division and percentages.  */
+arithmetic operations such as addition, subtraction, multiplication, division and percentages.
+This will also calculate the additional functions such as trigonometric functions, random functions
+This calculator works both on Potrait and Landscape mode */
 
 import UIKit
 
