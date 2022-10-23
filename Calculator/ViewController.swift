@@ -127,37 +127,44 @@ class ViewController: UIViewController {
         
     }
     
+    // This is the function for random button that will generate random numbers between 0 to 1
     @IBAction func RandomBtnPressed(_ sender: UIButton) {
         let randomNumber = Double.random(in:0...0.99)
         currentNumber = "\(randomNumber)"
         resultLbl.text = "\(randomNumber)"
     }
     
+    // This is the function for squaring a number (doubling) the number
     @IBAction func SqrBtnPressed(_ sender: UIButton) {
         result = "\(pow(Double(currentNumber)!, 2))"
         resultLbl.text = result
     }
     
+    // This is thw function for giving the squareroot of a number
     @IBAction func SqrootBtnPressed(_ sender: UIButton) {
         result = "\(sqrt(Double(currentNumber)!))"
         resultLbl.text = result
     }
     
+    // This is the function for generating the value of Pi
     @IBAction func PiBtnPressed(_ sender: UIButton) {
         currentNumber = "\(Double.pi)"
         resultLbl.text = "\(Double.pi)"
     }
     
+    // This is the trigonometric function for Sine
     @IBAction func SinBtnPressed(_ sender: UIButton) {
         result = "\(sin(Double(currentNumber)! * Double.pi / 180))"
         resultLbl.text = result
     }
     
+    // This is the trigonometric function for Cosine
     @IBAction func CosBtnPressed(_ sender: UIButton) {
         result = "\(cos(Double(currentNumber)! * Double.pi / 180))"
         resultLbl.text = result
     }
     
+    //This is the trigonometric function for Tangent
     @IBAction func TanBtnPressed(_ sender: UIButton) {
         result = "\(tan(Double(currentNumber)! * Double.pi / 180))"
         resultLbl.text = result
