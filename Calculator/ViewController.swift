@@ -128,24 +128,38 @@ class ViewController: UIViewController {
     }
     
     @IBAction func RandomBtnPressed(_ sender: UIButton) {
+        let randomNumber = Double.random(in:0...0.99)
+        resultLbl.text = "\(randomNumber)"
     }
     
     @IBAction func SqrBtnPressed(_ sender: UIButton) {
+        result = "\(pow(Double(currentNumber)!, 2))"
+        resultLbl.text = result
     }
     
     @IBAction func SqrootBtnPressed(_ sender: UIButton) {
+        result = "\(sqrt(Double(currentNumber)!))"
+        resultLbl.text = result
     }
     
     @IBAction func PiBtnPressed(_ sender: UIButton) {
+        currentNumber = "\(Double.pi)"
+        resultLbl.text = "\(Double.pi)"
     }
     
     @IBAction func SinBtnPressed(_ sender: UIButton) {
+        result = "\(sin(Double(currentNumber)! * Double.pi / 180))"
+        resultLbl.text = result
     }
     
     @IBAction func CosBtnPressed(_ sender: UIButton) {
+        result = "\(cos(Double(currentNumber)! * Double.pi / 180))"
+        resultLbl.text = result
     }
     
     @IBAction func TanBtnPressed(_ sender: UIButton) {
+        result = "\(tan(Double(currentNumber)! * Double.pi / 180))"
+        resultLbl.text = result
     }
     
     
